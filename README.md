@@ -1,2 +1,2 @@
 # DesignPatterns
-Design Patterns
+This repository will cover the Design Patterns.
