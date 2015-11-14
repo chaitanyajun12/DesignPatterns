@@ -3,7 +3,7 @@ package com.design.patterns.behavioral.observer;
 /*
  * Observer's onDataUpdate() is invoked on the data change in Subject.
  */
-public class ObserverB implements Observer {
+public class ObserverB implements IObserver {
 
 	private Subject subject;
 	

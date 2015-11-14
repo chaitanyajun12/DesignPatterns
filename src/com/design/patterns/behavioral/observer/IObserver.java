@@ -1,6 +1,6 @@
 package com.design.patterns.behavioral.observer;
 
-public interface Observer {
+public interface IObserver {
 
 	public void onDataUpdate();
 }

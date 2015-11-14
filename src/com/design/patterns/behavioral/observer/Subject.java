@@ -6,19 +6,19 @@ import java.util.List;
 public class Subject {
 		
 	private int data;
-	private List<Observer> observers;
+	private List<IObserver> observers;
 	
 	public Subject() {
 		observers = new ArrayList<>();
 	}
 	
-	public void register(Observer observer) {
+	public void register(IObserver observer) {
 		
 		if(!observers.contains(observer))
 			observers.add(observer);			
 	}
 	
-	public void unregister(Observer observer) {
+	public void unregister(IObserver observer) {
 		
 		if(observers.contains(observer))
 			observers.remove(observer);
@@ -26,7 +26,7 @@ public class Subject {
 
 	public void notifyObservers() {
 		
-		for(Observer observer : observers) {
+		for(IObserver observer : observers) {
 			observer.onDataUpdate();
 		}
 	}
